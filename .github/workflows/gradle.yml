@@ -42,7 +42,8 @@ jobs:
       - name: build agent
         run: |
           pwd
-          ls
+          ls > aa.txt
+          cat aa.txt
           
         # cd src/agent
         # sh build_linux.sh
