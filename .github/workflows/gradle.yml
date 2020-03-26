@@ -41,6 +41,7 @@ jobs:
       
       - name: build agent
         run: |
+          pwd
           ls
           
         # cd src/agent
