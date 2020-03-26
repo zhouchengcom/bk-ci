@@ -52,5 +52,5 @@ jobs:
         with:
           # Artifact name
           name: agent
-          path: src/agent/bin/*
+          path: src/agent/bin
   
