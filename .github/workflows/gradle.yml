@@ -42,8 +42,9 @@ jobs:
       - name: build agent
         run: |
           ls
-          cd src/agent
-          sh build_linux.sh
+          
+        # cd src/agent
+        # sh build_linux.sh
           
             
       - name: Upload artifact
