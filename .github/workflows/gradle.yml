@@ -32,3 +32,23 @@ jobs:
       # Artifact name
         name: frontend
         path: src/frontend/frontend
+  
+  agent-build:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Use golang env
+        uses: actions/setup-go@v1.0.0
+      
+      - name: build agent
+        run: |
+          cd src/agent
+          sh build_linux.sh
+          
+            
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          # Artifact name
+          name: agent
+          path: src/agent/bin/*
+  
