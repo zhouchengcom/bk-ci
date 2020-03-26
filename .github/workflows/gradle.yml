@@ -53,4 +53,10 @@ jobs:
           # Artifact name
           name: agent
           path: src/agent/bin
-  
+  pyhton-build:
+    runs-on: [self-hosted]
+    
+    steps:
+      - uses: actions/setup-python@v1.2.0
+      - name: test
+        run: python --verson
