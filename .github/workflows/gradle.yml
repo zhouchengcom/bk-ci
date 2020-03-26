@@ -27,8 +27,8 @@ jobs:
         gradle clean build
     
     - name: Upload artifact
-     uses: actions/upload-artifact@v1.0.0
-     with:
+      uses: actions/upload-artifact@v1.0.0
+      with:
       # Artifact name
-      name: boost-jar
-      path: src/backend/ci/release
+        name: boost-jar
+        path: src/backend/ci/release
